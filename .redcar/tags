@@ -1,0 +1,9 @@
+1362710852
+Application	/home/paul/rails_projects/sample_app/config/application.rb	  class Application 
+ApplicationController	/home/paul/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	/home/paul/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
+SampleApp	/home/paul/rails_projects/sample_app/config/application.rb	module SampleApp
+StaticPagesController	/home/paul/rails_projects/sample_app/app/controllers/static_pages_controller.rb	class StaticPagesController 
+StaticPagesHelper	/home/paul/rails_projects/sample_app/app/helpers/static_pages_helper.rb	module StaticPagesHelper
+help	/home/paul/rails_projects/sample_app/app/controllers/static_pages_controller.rb	  def help
+home	/home/paul/rails_projects/sample_app/app/controllers/static_pages_controller.rb	  def home
