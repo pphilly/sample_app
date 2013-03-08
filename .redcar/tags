@@ -1,4 +1,4 @@
-1362716713
+1362720712
 About page	/home/paul/rails_projects/sample_app/spec/requests/static_pages_spec.rb	describe "About page" do
 Application	/home/paul/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	/home/paul/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 

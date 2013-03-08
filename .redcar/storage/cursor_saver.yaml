@@ -1,8 +1,5 @@
 --- 
 cursor_positions: 
-  - :path: Gemfile
-    :cursor_offset: 0
-    :timestamp: 2013-03-07 20:56:41 -05:00
   - :path: public/hello.html
     :cursor_offset: 121
     :timestamp: 2013-03-07 21:11:24 -05:00
@@ -24,9 +21,6 @@ cursor_positions:
   - :path: public/index.html
     :cursor_offset: 4065
     :timestamp: 2013-03-07 23:04:13 -05:00
-  - :path: .gitignore
-    :cursor_offset: 0
-    :timestamp: 2013-03-07 22:45:59 -05:00
   - :path: spec/requests/static_pages_spec.rb
     :cursor_offset: 459
     :timestamp: 2013-03-07 23:13:50 -05:00
@@ -42,10 +36,25 @@ cursor_positions:
   - :path: db/development.sqlite3
     :cursor_offset: 0
     :timestamp: 2013-03-07 21:19:27 -05:00
-  - :path: db/test.sqlite3
+  - :path: Rakefile
     :cursor_offset: 0
-    :timestamp: 2013-03-07 22:05:19 -05:00
+    :timestamp: 2013-03-07 20:55:32 -05:00
+  - :path: db/schema.rb
+    :cursor_offset: 0
+    :timestamp: 2013-03-08 00:30:48 -05:00
   - :path: db/seeds.rb
     :cursor_offset: 0
     :timestamp: 2013-03-07 20:55:33 -05:00
+  - :path: db/test.sqlite3
+    :cursor_offset: 0
+    :timestamp: 2013-03-07 22:05:19 -05:00
+  - :path: .gitignore
+    :cursor_offset: 464
+    :timestamp: 2013-03-07 23:25:13 -05:00
+  - :path: config/database.yml
+    :cursor_offset: 633
+    :timestamp: 2013-03-08 00:30:35 -05:00
+  - :path: Gemfile
+    :cursor_offset: 404
+    :timestamp: 2013-03-07 23:17:33 -05:00
 files_to_retain: 0
