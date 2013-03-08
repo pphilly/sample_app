@@ -6,4 +6,7 @@ cursor_positions:
   - :path: public/hello.html
     :cursor_offset: 121
     :timestamp: 2013-03-07 21:11:24 -05:00
+  - :path: .gitignore
+    :cursor_offset: 453
+    :timestamp: 2013-03-07 22:18:12 -05:00
 files_to_retain: 0
