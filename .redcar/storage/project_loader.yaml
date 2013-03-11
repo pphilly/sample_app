@@ -1,7 +1,0 @@
---- 
-open_files: 
-  - Gemfile
-  - Guardfile
-  - .rspec
-  - .gitignore
-  - spec/requests/static_pages_spec.rb
