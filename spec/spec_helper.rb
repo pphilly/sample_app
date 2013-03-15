@@ -48,9 +48,8 @@ Spork.prefork do
   end
 end
 
-Spork.each_run do
-  # This code will be run each time you run your specs.
-
+Spork.each_run do  
+  # This code will be run each time you run your specs.  
 end
 
 # --- Instructions ---
@@ -81,7 +80,6 @@ end
 #
 # These instructions should self-destruct in 10 seconds.  If they don't, feel
 # free to delete them.
-
 
 
 
