@@ -44,7 +44,21 @@ describe "Authentication" do
     end
   end
 
-  describe "authorization" do
+  describe "authorization" do    
+    describe "for signed-in users" do
+      let(:user) { FactoryGirl.create(:user) }
+      before { sign_in user }
+
+      describe "using 'new' action" do
+        before { get new_user_path }      
+        specify { response.should redirect_to(root_path) }
+      end
+
+      describe "using 'create' action" do
+        before { post users_path }
+        specify { response.should redirect_to(root_path) } 
+      end 
+    end
 
     describe "as non-admin user" do
       let(:user) { FactoryGirl.create(:user) }
@@ -61,6 +75,10 @@ describe "Authentication" do
     describe "for non-signed-in users" do
       let(:user) { FactoryGirl.create(:user) }
 
+      it { should_not have_link('Profile', href: user_path(user)) }
+      it { should_not have_link('Settings', href: edit_user_path(user)) }
+      it { should_not have_link('Sign out', href: signout_path) }
+
       describe "when attempting to visit a protected page" do
         before do
           visit edit_user_path(user)
@@ -73,6 +91,20 @@ describe "Authentication" do
 
           it "should render the desired protected page" do
             page.should have_selector('title', text: 'Edit user')
+          end
+
+          describe "when signing in again" do
+            before do
+              delete signout_path
+              visit signin_path
+              fill_in "Email",    with: user.email
+              fill_in "Password", with: user.password
+              click_button "Sign in"
+            end
+
+            it "should render the default (profile) page" do
+              page.should have_selector('title', text: user.name) 
+            end
           end
         end
       end
